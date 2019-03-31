@@ -1,0 +1,237 @@
+@import
+url('https://fonts.googleapis.com/css?family=Open+Sans: 400,600,700,800')
+;
+
+/*------------global------------*/
+*{
+    box-sizing: border-box;
+    transition: all ease-in-out 250ms;
+}
+
+body{
+    margin: 0;
+    font-family: "Open Sans", sansserif;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    padding: 0em;
+    margin: 0em;
+}
+
+/*------------header------------*/
+@media (max-width:35rem){
+    nav li{
+        font-size: .8em;
+    }
+}
+
+
+
+header{
+    height: 5em;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    background: whitesmoke;
+    padding: 0em 1em;
+}
+
+.logo{
+    margin: 0.5em 0.5em;
+    padding: 0.1em;
+    font-size: 1.75em;
+    font-weight: 600;
+    color: rgb(44, 62, 80);
+    text-decoration: none;
+    border: solid;
+    float: left;
+}
+
+.logo:hover{
+    color: rgb(31, 97, 141);
+}
+
+nav ul{
+    margin: 1.25em 0em;
+    padding: 0;
+    list-style: none;
+    float: right;
+}
+
+nav li{
+    display: inline-block;
+    margin: .5em
+}
+
+nav a{
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    padding: 0.5em;
+    margin: 0;
+}
+
+nav a:hover{
+    color: darkgray;
+}
+
+/*------------intro------------*/
+@media (min-width: 60rem){
+    .home{
+        height: 100vh;
+        padding-top: 35vh
+    }
+}
+.home{
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position:center;
+    padding: 10em 5em;
+}
+
+.intro{
+    padding-top: 3em;
+    font-size: 2em;
+    color: white;
+}
+
+.intro span{
+    font-size: 0.75em;
+    font-weight:400;
+    display: block;
+    padding-bottom: 2em;
+}
+
+.resumebutton{
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    border: solid;
+    padding: 0.5em
+}
+
+.resumebutton:hover{
+    color: darkgray;
+}
+
+
+/*------------about------------*/
+@media (min-width: 60rem){
+    .about{
+        height: 100vh;
+        padding-top: 50vh
+    }
+}
+
+.about{
+    background: black;
+    background-size: cover;
+    padding: 5em 3em;
+    color: white;
+}
+
+.about h1{
+    text-transform: uppercase;
+}
+
+/*------------portfolio------------*/
+@media (min-width: 60rem){
+    .portfolio{
+        height: 100vh;
+        padding-top: 35vh
+    }
+    .port-item{
+        width: 50%;
+        float:left;
+        overflow: hidden;
+    }
+
+    .port-detail{
+        transform: translateY(100%);
+    }
+
+    .port-item:hover .port-detail{
+        transform: translateY(0%)
+    }
+}
+
+.portfolio{
+    background: whitesmoke;
+    background-size: cover;
+    padding: 6em 0em;
+}
+
+.portfolio h1{
+    margin: auto;
+    padding: 0 0 1em 2em;
+    text-transform: uppercase;
+}
+
+.port-item{
+    margin: 0;
+    position: relative;
+}
+
+.port-item img {
+    display: block;
+}
+
+.port-detail{
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    bottom: 0em;
+    left: 5em;
+    right: 5em;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding-bottom: 1.5em;
+    margin: 0;
+    font-weight: 700;
+}
+
+.button{
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    border: solid .1em;
+    padding: 0.3em
+}
+
+.button:hover{
+    color: darkgray;
+}
+
+/*------------cotact------------*/
+@media (min-width: 60rem){
+    .contact{
+        height: 100vh;
+        padding-top: 35vh
+    }
+}
+
+.contact{
+    background: whitesmoke;
+    background-size: cover;
+    background-position:center;
+    padding: 10em 3em;
+}
+
+.contact h1{
+    margin: auto;
+    padding: 3em 0 1em 0;
+    text-transform: uppercase;
+}
+
+/*------------cotact------------*/
+footer{
+    background: black;
+}
+
+footer ul{
+    color: white;
+}
