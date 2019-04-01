@@ -86,7 +86,7 @@ nav a:hover{
     }
 }
 .home{
-    background-image: url(../img/background.jpg);
+    background-image: url(../images/background.jpg);
     background-size: cover;
     background-position:center;
     padding: 10em 5em;
