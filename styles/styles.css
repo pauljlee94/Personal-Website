@@ -161,7 +161,7 @@ nav a:hover{
 .portfolio{
     background: whitesmoke;
     background-size: cover;
-    padding: 6em 0em;
+    padding: 6em 0 0 0;
 }
 
 .portfolio h1{
@@ -218,16 +218,17 @@ nav a:hover{
     background: whitesmoke;
     background-size: cover;
     background-position:center;
-    padding: 10em 3em;
+    padding: 4em 3em;
 }
 
 .contact h1{
     margin: auto;
-    padding: 3em 0 1em 0;
+    padding: 1em 0 1em 0;
+    text-align: center;
     text-transform: uppercase;
 }
 
-/*------------cotact------------*/
+/*------------footer------------*/
 footer{
     background: black;
 }
