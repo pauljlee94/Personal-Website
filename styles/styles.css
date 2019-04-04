@@ -21,12 +21,6 @@ img{
 }
 
 /*------------header------------*/
-@media (max-width:35rem){
-    nav li{
-        font-size: .8em;
-    }
-}
-
 
 
 header{
@@ -78,6 +72,16 @@ nav a:hover{
     color: darkgray;
 }
 
+
+@media (max-width:35rem){
+    nav li{
+        font-size: .8em;
+    }
+    .logo{
+        position: absolute;
+        left:30%;
+    }
+}
 /*------------intro------------*/
 @media (min-width: 60rem){
     .home{
