@@ -21,8 +21,6 @@ img{
 }
 
 /*------------header------------*/
-
-
 header{
     height: 5em;
     width: 100%;
@@ -69,7 +67,7 @@ nav a{
 }
 
 nav a:hover{
-    color: darkgray;
+    color: rgb(99, 99, 99);
 }
 
 
@@ -97,7 +95,8 @@ nav a:hover{
 }
 
 .intro{
-    padding-top: 3em;
+    Margin: 0;
+    padding-top: 6em;
     font-size: 2em;
     color: white;
 }
@@ -118,7 +117,7 @@ nav a:hover{
 }
 
 .resumebutton:hover{
-    color: darkgray;
+    color: rgb(160, 160, 160);
 }
 
 
@@ -142,7 +141,7 @@ nav a:hover{
 }
 
 /*------------portfolio------------*/
-@media (min-width: 60rem){
+@media (min-width: 70rem){
     .portfolio{
         height: 100vh;
         padding-top: 35vh
@@ -165,11 +164,11 @@ nav a:hover{
 .portfolio{
     background: whitesmoke;
     background-size: cover;
-    padding: 6em 0 0 0;
+    padding-top: 6em;
 }
 
 .portfolio h1{
-    margin: auto;
+    margin: 1em auto;
     padding: 0 0 1em 2em;
     text-transform: uppercase;
 }
@@ -198,6 +197,7 @@ nav a:hover{
 }
 
 .button{
+    margin: 0 10px 0 10px;
     font-weight: 400;
     text-transform: uppercase;
     text-decoration: none;
@@ -207,22 +207,22 @@ nav a:hover{
 }
 
 .button:hover{
-    color: darkgray;
+    color: rgb(139, 139, 139);
 }
 
 /*------------cotact------------*/
-@media (min-width: 60rem){
+/* @media (min-width: 60rem){
     .contact{
         height: 100vh;
         padding-top: 35vh
     }
-}
+} */
 
 .contact{
+    margin-top: 100px;
     background: whitesmoke;
     background-size: cover;
     background-position:center;
-    padding: 4em 3em;
 }
 
 .contact h1{
@@ -230,6 +230,31 @@ nav a:hover{
     padding: 1em 0 1em 0;
     text-align: center;
     text-transform: uppercase;
+}
+
+.contactform {
+    margin: auto;
+    display:block;
+    width: 450px;
+}
+
+#message{ 
+    width: 450px;
+    height:200px;
+}
+
+input {
+    margin: 3px 0 10px 0;
+    width: 450px;
+    font-size: 20px;
+}
+
+.submitButton {
+    width: 100px;
+    height: 30px;
+    margin: auto;
+    display:block;
+
 }
 
 /*------------footer------------*/
