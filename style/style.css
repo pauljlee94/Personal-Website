@@ -141,6 +141,10 @@ nav{
     .hamburger {
         display: none;
     }
+
+    nav {
+        grid-template-rows: 1fr 0;
+    }
 }
 /*------------intro------------*/
 .home{
