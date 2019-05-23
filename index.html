@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Paul J. Lee</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="style/hamburgers.css" rel="stylesheet">
     <link href="style/style.css" rel="stylesheet" type="text/css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
@@ -15,8 +16,18 @@
 
     <nav class="header" data-aos="fade-down" data-aos-duration="2000">
         <div id="home">
-            <a href="#" class="logo">Paul J. Lee</a>
+                <a href="#" class="logo">Paul J. Lee</a>
         </div>
+
+        <div class="hambuttom">
+                <button class="hamburger hamburger--squeeze" type="button">
+                        <span class=    "hamburger-box">
+                          <span class="hamburger-inner"></span>
+                        </span>
+                      </button>        
+        </div>
+
+        
         <div id="navigation">
             <ul>
                 <li><a href="#about">about me</a></li>
@@ -25,8 +36,15 @@
             </ul>
         </div>
     </nav>
-
-
+    
+    <div id="mobilenav" class="hidden">
+        <ul>
+            <li><a href="#about">about me</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+    </div>
+    
     <!--home-->
     <section class="home" id="home">
         <div class="homecontent" data-aos="fade-up" data-aos-duration="2000">
@@ -59,41 +77,43 @@
     <!--portfolio-->
     <section class="portfolio" id="portfolio">
         <h1 data-aos="fade-right" data-aos-duration="2000" >Portfolio</h1>
-        <figure data-aos="fade-up" data-aos-duration="2000" class="port-item">
-            <img src= "img/project1.jpg" alt="project 1" class="project">
-            <figcaption class="port-detail">
-                <p>Project 1</p>
-                <a href="" class="button">Live page</a>
-                <a href="" class="button">Github</a>
-            </figcaption>
-        </figure>
+        <div class=portfoliocontent>
+            <figure data-aos="fade-up" data-aos-duration="2000" class="port-item">
+                <img src= "img/transcript.png" alt="Free Live Transcript" class="project">
+                <figcaption class="port-detail">
+                    <p>Free Live Transcript - Open Source</p>
+                    <a href="https://freelivetranscript.com/" target="_blank" class="button">Live page</a>
+                    <a href="https://github.com/marktnoonan/transcription" target="_blank" class="button">Github</a>
+                </figcaption>
+            </figure>
 
-        <figure data-aos="fade-up" data-aos-duration="2000" class="port-item">
-            <img src= "img/project2.jpg" alt="project 2" class="project">
-            <figcaption class="port-detail">
-                <p>Project 2</p>
-                <a href="" class="button">Live page</a>
-                <a href="" class="button">Github</a>
-            </figcaption>
-        </figure>
+            <figure data-aos="fade-up" data-aos-duration="2000" class="port-item">
+                <img src= "img/restaurant.png" alt="404 Cafe" class="project">
+                <figcaption class="port-detail">
+                    <p>Responsive Restaurant Webpage</p>
+                    <a href="https://pauljlee94.github.io/responsive_restaurant_webpage/" target="_blank" class="button">Live page</a>
+                    <a href="https://github.com/pauljlee94/responsive_restaurant_webpage" target="_blank" class="button">Github</a>
+                </figcaption>
+            </figure>
 
-        <figure data-aos="fade-up" data-aos-duration="2000" class="port-item">
-            <img src= "img/project3.jpg" alt="project 3" class="project">
-            <figcaption class="port-detail">
-                <p>Project 3</p>
-                <a href="" class="button">Live page</a>
-                <a href="" class="button">Github</a>
-            </figcaption>
-        </figure>
+            <figure data-aos="fade-up" data-aos-duration="2000" class="port-item">
+                <img src= "img/blog.png" alt="blog" class="project">
+                <figcaption class="port-detail">
+                    <p>Personal Blog/p>
+                    <a href="" target="_blank" class="button">Live page</a>
+                    <a href="" target="_blank" class="button">Github</a>
+                </figcaption>
+            </figure>
 
-        <figure data-aos="fade-up" data-aos-duration="2000" class="port-item">
-            <img src= "img/project4.jpg" alt="project 4" class="project">
-            <figcaption class="port-detail">
-                <p>Project 4</p>
-                <a href="" class="button">Live page</a>
-                <a href="" class="button">Github</a>
-            </figcaption>
-        </figure>
+            <figure data-aos="fade-up" data-aos-duration="2000" class="port-item">
+                <img src= "img/project4.jpg" alt="project 4" class="project">
+                <figcaption class="port-detail">
+                    <p>Project 4</p>
+                    <a href="" target="_blank" class="button">Live page</a>
+                    <a href="" target="_blank" class="button">Github</a>
+                </figcaption>
+            </figure>
+        </div>
     </section>
 
     <!--contact-->
@@ -140,6 +160,7 @@
             <li><a href="#contact">contact</a></li>
         </ul>
     </footer>
+    <script src="script/script.js"></script>
     <script>
         AOS.init();
     </script>

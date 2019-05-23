@@ -5,7 +5,6 @@ url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap');
 /*------------global------------*/
 *{
     box-sizing: border-box;
-    transition: all ease-in-out 250ms;
 }
 
 html,body {
@@ -35,8 +34,8 @@ nav{
     display: grid;
     grid-template-columns: 14em 1fr;
     align-items: center;
-    background: whitesmoke;
-    z-index: 2;
+    background: white;
+    z-index: 100;
 }
 /* --------LOGO--------- */
 .logo{
@@ -56,7 +55,9 @@ nav{
 
 /* Navigation */
 #navigation {
+    display: none;
     margin-right: 1em;
+    grid-row: 1;
     grid-column: 2;
     justify-self: end;
 }
@@ -83,9 +84,40 @@ nav{
     text-decoration: underline;
 }
 
+.hambuttom {
+    justify-self: end;
+}
 
-@media (max-width:35rem){
-/* Responsive nav bar */
+#mobilenav {
+    top: 4.5em;
+    position: fixed;
+    width: 100%;
+    height: 10em;
+    border-top: solid 1px rgb(77, 77, 77);
+    width:100%;
+    height: 10em;
+    background-color: white;
+    z-index: 1;
+}
+
+.hidden{
+    transform: translateY(-100%);
+    transition: transform 500ms;
+}
+
+
+@media (min-width:37rem){
+    #navigation {
+        display: inherit;
+    }
+
+    #mobilenav {
+        display: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
 }
 /*------------intro------------*/
 .home{
@@ -126,13 +158,6 @@ nav{
 
 
 /*------------about------------*/
-@media (min-width: 60rem){
-    .about{
-        height: 100vh;
-        padding-top: 50vh
-    }
-}
-
 .about{
     background: black;
     background-size: cover;
@@ -221,11 +246,10 @@ nav{
 .button:hover{
     color: rgb(139, 139, 139);
 }
-
 /*------------cotact------------*/
 .contact{
     margin-top: 100px;
-    background: whitesmoke;
+    background: white;
     background-size: cover;
     text-align: center;
 }
@@ -316,4 +340,22 @@ footer a{
 footer a:hover {
     color: rgb(160, 160, 160);
     text-decoration: underline;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #555; 
 }
