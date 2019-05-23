@@ -4,29 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Paul J. Lee</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="style/style.css" rel="stylesheet" type="text/css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
 
 <!--header-->
-    <header class="header">
-        <a href="#home" class="logo">Paul J. Lee</a>
-        <nav>
+
+    <nav class="header" data-aos="fade-down" data-aos-duration="2000">
+        <div id="home">
+            <a href="#" class="logo">Paul J. Lee</a>
+        </div>
+        <div id="navigation">
             <ul>
                 <li><a href="#about">about me</a></li>
                 <li><a href="#portfolio">portfolio</a></li>
                 <li><a href="#contact">contact</a></li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
+
 
     <!--home-->
     <section class="home" id="home">
-        <h1 class="intro">Self taught programmer
-            <span>I am learning how to program</span>
-        </h1>
-        <a href="misc/resume.pdf" target="_blank" class="resumebutton">Resume</a>
+        <div class="homecontent" data-aos="fade-up" data-aos-duration="2000">
+            <h1 class="intro">Self taught programmer
+                <span>I am learning how to program</span>
+            </h1>
+            <a href="misc/resume.pdf" target="_blank" class="resumebutton">Resume</a>
+        </div>
     </section>
 
     <!--about me-->
@@ -52,7 +60,7 @@
     <section class="portfolio" id="portfolio">
         <h1>Portfolio</h1>
         <figure class="port-item">
-            <img src= "images/project1.jpg" alt="project 1" class="project">
+            <img src= "img/project1.jpg" alt="project 1" class="project">
             <figcaption class="port-detail">
                 <p>Project 1</p>
                 <a href="" class="button">Live page</a>
@@ -61,7 +69,7 @@
         </figure>
 
         <figure class="port-item">
-            <img src= "images/project2.jpg" alt="project 2" class="project">
+            <img src= "img/project2.jpg" alt="project 2" class="project">
             <figcaption class="port-detail">
                 <p>Project 2</p>
                 <a href="" class="button">Live page</a>
@@ -70,7 +78,7 @@
         </figure>
 
         <figure class="port-item">
-            <img src= "images/project3.jpg" alt="project 3" class="project">
+            <img src= "img/project3.jpg" alt="project 3" class="project">
             <figcaption class="port-detail">
                 <p>Project 3</p>
                 <a href="" class="button">Live page</a>
@@ -79,7 +87,7 @@
         </figure>
 
         <figure class="port-item">
-            <img src= "images/project4.jpg" alt="project 4" class="project">
+            <img src= "img/project4.jpg" alt="project 4" class="project">
             <figcaption class="port-detail">
                 <p>Project 4</p>
                 <a href="" class="button">Live page</a>
@@ -90,36 +98,36 @@
 
     <!--contact-->
     <section class ="contact" id="contact">
-        <div class='contactform'>
-            <h1>contact me</h1>
-            <form action="https://formspree.io/pauljlee94@gmail.com" method="POST" />
+        <h1>contact me</h1>
+            <div class='contactform'>
+                <form action="https://formspree.io/pauljlee94@gmail.com" method="POST" />
 
-                <div class="input">
-                <label for="name">Name</label>
-                <br>
-                <input id="name" name="name" type="text">
-                <br>    
+                    <div class="input">
+                    <label for="name">Name</label>
+                    <br>
+                    <input id="name" name="name" type="text">
+                    <br>    
 
-                <label for="email">Email</label>
-                <br>
-                <input id="email" name="email" type="text">
-                <br>
+                    <label for="email">Email</label>
+                    <br>
+                    <input id="email" name="email" type="text">
+                    <br>
 
-                <label for="subject">Subject</label>
-                <br>
-                <input id="subject" name="subject" type="text">
-                <br>
+                    <label for="subject">Subject</label>
+                    <br>
+                    <input id="subject" name="subject" type="text">
+                    <br>
 
-                <label for="message">Message</label>
-                <br>
-                <textarea id="message" name="message"></textarea>
-                <br>
-                </div>
-                
-                <input class='submitButton' type="submit" value="Submit">
+                    <label for="message">Message</label>
+                    <br>
+                    <textarea id="message" name="message"></textarea>
+                    <br>
+                    </div>
+                    
+                    <input class='submitButton' type="submit" value="Submit">
 
-            </form>
-        </div>
+                </form>
+            </div>
         <h1>stay connected</h1>
             <!--add social media buttons here-->
     </section>
@@ -127,10 +135,13 @@
     <!--footer-->
     <footer>
         <ul>
-            <li>about me</li>
-            <li>portfolio</li>
-            <li>contact</li>
+            <li><a href="#about">about me</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#contact">contact</a></li>
         </ul>
     </footer>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
