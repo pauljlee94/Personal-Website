@@ -203,7 +203,7 @@ nav{
 
 /*------------about------------*/
 .about{
-    background: black;
+    background: rgb(29, 29, 29);
     background-size: cover;
     padding: 5em 3em;
     color: white;
@@ -390,15 +390,29 @@ footer a:hover {
 
 .connect{
     margin-top: 5em;
-    padding-top: 0.5em;
+    padding-top: .25em;
     width: 100%;
-    height: 10em;
+    height: 7.5em;
     text-align:center;
-    text-decoration: underline;
     background-color: rgb(34, 34, 34);
     color: white;
+    font-size: 1.25em;
 }
 
-.connet h1{
+.connect ul {
+    padding: 0;
+}
 
+.connect li{
+    display: inline;
+    list-style: none;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+}
+
+.icon:hover {
+    opacity: .5;
 }
