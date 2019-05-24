@@ -103,7 +103,7 @@ nav{
 }
 
 #mobilenav {
-    top: 4.5em;
+    top: 4em;
     position: fixed;
     width: 100%;
     height: 10em;
@@ -118,13 +118,12 @@ nav{
 
 #mobilenav ul {
     text-align: center;
-    
     margin:0;
     padding: 0;
 }
 #mobilenav li {
     margin: 0;
-    padding:1em;
+    padding:1em 0 1em 0;
     list-style: none;
     width: 100%;
     font-weight: 700;
