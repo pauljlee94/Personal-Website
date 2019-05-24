@@ -1,9 +1,16 @@
 let hamburger = document.querySelector(".hamburger");
-let nav = document.querySelector("#mobilenav")
+let navbutton = document.querySelectorAll(".mobilebutton");
+let nav = document.querySelector("#mobilenav");
 
 hamburger.addEventListener('click', () => {
-    hamToggle()
-    navToggle()
+    hamToggle();
+    navToggle();
+})
+
+navbutton.forEach(ele => {
+    ele.addEventListener('click', (e) => {
+        navClose();
+    });
 })
 
 
@@ -18,9 +25,12 @@ function hamToggle() {
 function navToggle() {
     if (!nav.classList.contains("hidden")) {
         nav.classList.add("hidden")
-        nav.classList.remove("visible")
     } else {
         nav.classList.remove("hidden")
-        nav.classList.remove("visible")
     }
+}
+
+function navClose() {
+    nav.classList.add("hidden");
+    hamburger.classList.remove("is-active");
 }
