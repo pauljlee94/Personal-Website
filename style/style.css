@@ -25,6 +25,25 @@ img{
     margin: 0em;
 }
 
+a.anchor {
+    display: block;
+    position: relative;
+    visibility: hidden;
+}
+
+a#about {
+    top: -140px;
+}
+
+a#portfolio {
+    top: -120px;
+}
+
+a#contact {
+    top: -110px;
+}
+
+
 /* Scrollbar */
 
 ::-webkit-scrollbar {
@@ -222,11 +241,12 @@ nav{
 /*------------portfolio------------*/
 @media (min-width: 70rem){
     .portfolio{
-        height: 100vh;
-        padding-top: 35vh
+        height: 60vw;
+        padding-top: 35vh;
     }
     .port-item{
         width: 50%;
+        height: auto;
         float:left;
         overflow: hidden;
     }
@@ -236,7 +256,8 @@ nav{
     }
 
     .port-item:hover .port-detail{
-        transform: translateY(0%)
+        transform: translateY(0%);
+        transition: transform 500ms;
     }
 }
 
@@ -260,6 +281,9 @@ nav{
 
 .port-item img {
     display: block;
+}
+.port-item img:hover {
+    opacity: .9;
 }
 
 .port-detail{
@@ -291,15 +315,14 @@ nav{
 }
 /*------------cotact------------*/
 .contact{
-    position: relative;
-    margin-top: 100px;
-    background: white;
+    padding-top: 5em;
+    background: whitesmoke;
     background-size: cover;
     text-align: center;
 }
 
 .contact h1{
-    margin: 1em auto 1em auto;
+    margin: 1em auto 2em auto;
     padding:0;
     text-align: center;
     text-transform: lowercase;
@@ -387,6 +410,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* Connect */
 .connect{
     margin-top: 5em;
     padding-top: .25em;
